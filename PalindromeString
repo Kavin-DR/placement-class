@@ -1,0 +1,19 @@
+// GeeksForGeeks Palindrome String
+
+
+#include <algorithm>
+
+class Solution {
+  public:
+    bool isPalindrome(string& s) {
+
+        string temp = s;
+
+        reverse(temp.begin(), temp.end());
+
+        if(s == temp)
+            return true;
+        else
+            return false;
+    }
+};
